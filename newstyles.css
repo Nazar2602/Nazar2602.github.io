@@ -69,6 +69,7 @@ section {
 .container_info {
     position: relative;
     z-index: 9999;
+    align-items: stretch !important;
   }
 
 .header .container {
@@ -162,10 +163,6 @@ section {
    text-decoration: none;
    position: relative;
 }
-
-.menu a:hover::after {
-    width: 100%;
-}
 .menu a::after {
    content: "";
    display: block;
@@ -176,7 +173,9 @@ section {
    background: pink;
    transition: width 0.3s  linear;
 }
-
+.menu a:hover::after {
+    width: 100%;
+}
 
 
 
@@ -236,6 +235,9 @@ section {
     padding: 10px;
     margin:  0 auto;
     margin-top: 50px;
+}
+.card img {
+    height: 80px;
 }
 .card img, .card h3 {
     margin-bottom: 13px;
@@ -545,27 +547,21 @@ section {
 }
 @keyframes swing {
     15% {
-      -webkit-transform: translateX(5px);
       transform: translateX(5px);
     }
     30% {
-      -webkit-transform: translateX(-5px);
       transform: translateX(-5px);
     }
     40% {
-      -webkit-transform: translateX(4px);
       transform: translateX(4px);
     }
     50% {
-      -webkit-transform: translateX(-4px);
       transform: translateX(-4px);
     }
     65% {
-      -webkit-transform: translateX(2px);
       transform: translateX(2px);
     }
     100% {
-      -webkit-transform: translateX(0);
       transform: translateX(0);
     }
   }
@@ -574,9 +570,7 @@ section {
 }
 
 .footer__phone:hover i {
-    -webkit-animation: swing 0.6s ease;
     animation: swing 0.6s ease;
-     -webkit-animation-iteration-count: 1;
     animation-iteration-count: 1;
 } 
 .scroll {
